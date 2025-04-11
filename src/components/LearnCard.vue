@@ -16,7 +16,7 @@ defineProps<Props>()
         <h3 class="text-secondary fw-bold fs-2" aria-label="Número de la tarjeta">{{ index + 1 }}</h3>
       </div>
       <div class="flex-grow-1 d-flex flex-column">
-        <p class="mb-4 hyphens-auto flex-grow-1" v-html="card.text" aria-label="Descripción de la tarjeta"></p>
+        <p class="mb-4 hyphens-auto flex-grow-1 fs-6 fs-md-5 fs-lg-4" v-html="card.text" aria-label="Descripción de la tarjeta"></p>
         <div class="mt-auto">
           <img :src="card.image" :alt="'Card ' + (index + 1)" class="img-fluid rounded" aria-label="Imagen de la tarjeta" />
         </div>

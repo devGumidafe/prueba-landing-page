@@ -44,7 +44,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start">
-            <h1 class="display-6 fw-bold text-white mb-3 fs-4 fs-md-3 fs-lg-2" aria-label="Protege tu bienestar digital">
+            <h1 class="display-2 fw-bold text-white mb-4 fs-1 fs-md-2 fs-lg-1" aria-label="Protege tu bienestar digital">
               Protege tu bienestar digital
             </h1>
             <p class="lead text-white mb-4 fs-6 fs-md-5 hyphens-auto" aria-label="Descripción de la página">

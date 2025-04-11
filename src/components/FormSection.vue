@@ -10,7 +10,7 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8 text-center mb-4">
-          <h2 class="display-5 fw-bold text-secondary fs-4 fs-md-3 fs-lg-1" aria-label="Título de la sección de formulario">
+          <h2 class="display-2 fw-bold text-secondary text-center mb-4 fs-1 fs-md-2 fs-lg-1" aria-label="Título de la sección de formulario">
             Solicita formación gratuita
           </h2>
         </div>

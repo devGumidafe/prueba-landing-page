@@ -8,12 +8,12 @@ import LearnCard from './LearnCard.vue'
     <div class="container">
       <div class="card shadow-lg rounded-4 overflow-hidden border-0 bg-light">
         <div class="card-body p-4 p-md-5">
-          <h2 class="display-5 fw-bold text-secondary mb-4 fs-4 fs-md-3 fs-lg-1 text-center" aria-label="Título de la sección de aprendizaje">
+          <h2 class="display-2 fw-bold text-secondary text-center mb-4 fs-1 fs-md-2 fs-lg-1" aria-label="Título de la sección de aprendizaje">
             ¿Qué vas a aprender?
           </h2>
-          <p class="lead text-dark mb-4 hyphens-auto fs-6 fs-md-5 fs-lg-4" aria-label="Descripción de la sección de aprendizaje">
+          <p class="lead text-dark text-center mb-4 hyphens-auto fs-6 fs-md-5 fs-lg-4" aria-label="Descripción de la sección de aprendizaje">
             En (des)CONECTA - Conéctate contra la tecnoadicción, organizamos
-            <strong aria-label="Negrita en la descripción de la sección de aprendizaje">
+            <strong class="fw-bold" aria-label="Negrita en la descripción de la sección de aprendizaje">
               cursos gratuitos para enseñar a jóvenes de 10 a 18 años sobre el uso consciente,
               seguro y responsable de la tecnología,
               </strong>
