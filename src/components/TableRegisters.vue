@@ -22,13 +22,19 @@ defineProps<Props>()
       </thead>
       <tbody class="table-group-divider">
         <tr v-if="registros.length === 0">
-          <td colspan="5" class="text-center py-4 text-muted" aria-label="Mensaje de no registros disponibles">No hay registros disponibles</td>
+          <td
+            colspan="5"
+            class="text-center py-4 text-muted"
+            aria-label="Mensaje de no registros disponibles"
+          >
+            No hay registros disponibles
+          </td>
         </tr>
         <tr v-else v-for="(registro, index) in registros" :key="index">
           <th scope="row" class="px-3" aria-label="Fila de número">{{ index + 1 }}</th>
           <td class="px-3" aria-label="Nombre del registro">{{ registro.nombre }}</td>
           <td class="px-3" aria-label="Apellidos del registro">{{ registro.apellidos }}</td>
-          <td class="px-3" aria-label="Email del registro"> {{ registro.email }}</td>
+          <td class="px-3" aria-label="Email del registro">{{ registro.email }}</td>
           <td class="px-3" aria-label="Teléfono del registro">{{ registro.telefono }}</td>
         </tr>
       </tbody>
@@ -53,7 +59,7 @@ defineProps<Props>()
   white-space: nowrap;
 }
 
-@media (max-width: 768px) {
+@media screen and (width < 768px) {
   .table {
     font-size: 0.85rem;
   }

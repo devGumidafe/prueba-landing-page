@@ -4,19 +4,32 @@ import LearnCard from './LearnCard.vue'
 </script>
 
 <template>
-  <section id="learn-section" class="learn-section py-4 py-md-5" aria-label="Sección de aprendizaje">
+  <section
+    id="learn-section"
+    class="learn-section py-4 py-md-5"
+    aria-label="Sección de aprendizaje"
+  >
     <div class="container">
       <div class="main-card card shadow-lg rounded-4 overflow-hidden border-0 bg-light">
         <div class="card-body p-4 p-md-5">
-          <h2 class="display-2 fw-bold text-secondary text-center mb-4 fs-1 fs-md-2 fs-lg-1" aria-label="Título de la sección de aprendizaje">
+          <h2
+            class="display-2 fw-bold text-secondary text-center mb-4 fs-1 fs-md-2 fs-lg-1"
+            aria-label="Título de la sección de aprendizaje"
+          >
             ¿Qué vas a aprender?
           </h2>
-          <p class="lead text-dark text-center mb-4 hyphens-auto fs-6 fs-md-5 fs-lg-4" aria-label="Descripción de la sección de aprendizaje">
+          <p
+            class="lead text-dark text-center mb-4 hyphens-auto fs-6 fs-md-5 fs-lg-4"
+            aria-label="Descripción de la sección de aprendizaje"
+          >
             En (des)CONECTA - Conéctate contra la tecnoadicción, organizamos
-            <strong class="fw-bold" aria-label="Negrita en la descripción de la sección de aprendizaje">
+            <strong
+              class="fw-bold"
+              aria-label="Negrita en la descripción de la sección de aprendizaje"
+            >
               cursos gratuitos para enseñar a jóvenes de 10 a 18 años sobre el uso consciente,
               seguro y responsable de la tecnología,
-              </strong>
+            </strong>
             ayudándoles a comprender cómo el uso excesivo de pantallas puede afectar a su salud
             física y mental. Las personas participantes aprenderán a:
           </p>
@@ -28,7 +41,11 @@ import LearnCard from './LearnCard.vue'
           </div>
 
           <div class="text-center mt-4">
-            <button type="button" class="btn btn-secondary btn-lg px-4 fs-8 fs-md-6 fs-lg-4 py-2" aria-label="Botón de solicitud de formación gratuita">
+            <button
+              type="button"
+              class="btn btn-secondary btn-lg px-4 fs-8 fs-md-6 fs-lg-4 py-2"
+              aria-label="Botón de solicitud de formación gratuita"
+            >
               Solicita formación gratuita
             </button>
           </div>
@@ -39,7 +56,14 @@ import LearnCard from './LearnCard.vue'
 </template>
 
 <style scoped>
-.main-card{ 
+.main-card {
   background-color: #f2f2f2 !important;
 }
+
+.learn-section {
+  position: relative;
+  margin-top: -150px;
+  z-index: 10;
+}
+
 </style>

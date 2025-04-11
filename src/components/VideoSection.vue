@@ -85,14 +85,22 @@
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
+.btn-play {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (width >= 768px) {
+  .video-section {
+    background-size: 100% 50%;
+    min-height: 90vh;
+  }
+}
+
+@media screen and (width >= 992px) {
   .video-section {
     background-size: 100% 40%;
-  }
-
-  .btn-play {
-    width: 60px;
-    height: 60px;
+    min-height: 120vh;
   }
 }
 </style>

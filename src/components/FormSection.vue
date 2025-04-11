@@ -10,7 +10,10 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8 text-center mb-4">
-          <h2 class="display-2 fw-bold text-secondary text-center mb-4 fs-1 fs-md-2 fs-lg-1" aria-label="Título de la sección de formulario">
+          <h2
+            class="display-2 fw-bold text-secondary text-center mb-4 fs-1 fs-md-2 fs-lg-1"
+            aria-label="Título de la sección de formulario"
+          >
             Solicita formación gratuita
           </h2>
         </div>
@@ -18,7 +21,12 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
 
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
-          <form @submit="handleSubmit" class="needs-validation" novalidate aria-label="Formulario de solicitud de formación gratuita">
+          <form
+            @submit="handleSubmit"
+            class="needs-validation"
+            novalidate
+            aria-label="Formulario de solicitud de formación gratuita"
+          >
             <div class="row g-3 mb-3">
               <div class="col-12 col-md-6">
                 <input
@@ -125,17 +133,17 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
   box-shadow: 0 0 0 0.25rem rgba(230, 43, 37, 0.1);
 }
 
-@media (max-width: 768px) {
+@media screen and (width >= 768px) {
   .form-control {
     font-size: 1rem;
-    height: 50px;
-    padding: 1rem 1.5rem;
+    height: 55px;
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (width >= 992px) {
   .form-control {
     font-size: 1.1rem;
+    height: 60px;
   }
 }
 </style>
