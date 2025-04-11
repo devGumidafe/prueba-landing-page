@@ -6,7 +6,7 @@ import LearnCard from './LearnCard.vue'
 <template>
   <section id="learn-section" class="learn-section py-4 py-md-5" aria-label="Sección de aprendizaje">
     <div class="container">
-      <div class="card shadow-lg rounded-4 overflow-hidden border-0 bg-light">
+      <div class="main-card card shadow-lg rounded-4 overflow-hidden border-0 bg-light">
         <div class="card-body p-4 p-md-5">
           <h2 class="display-2 fw-bold text-secondary text-center mb-4 fs-1 fs-md-2 fs-lg-1" aria-label="Título de la sección de aprendizaje">
             ¿Qué vas a aprender?
@@ -39,7 +39,7 @@ import LearnCard from './LearnCard.vue'
 </template>
 
 <style scoped>
-.learn-section {
-  background-color: #f2f2f2;
+.main-card{ 
+  background-color: #f2f2f2 !important;
 }
 </style>
