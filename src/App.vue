@@ -8,7 +8,7 @@ import FormSection from '@/components/FormSection.vue'
 </script>
 
 <template>
-  <div class="landing-page d-flex flex-column bg-white">
+  <div class="d-flex flex-column bg-white">
     <Header />
     <VideoSection />
     <LearnSection />
