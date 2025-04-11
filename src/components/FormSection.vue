@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useFormRegister } from '@/composables/useFormRegister'
+import TableRegisters from '@/components/TableRegisters.vue'
 
 const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegister()
 </script>
@@ -86,6 +87,11 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
           </form>
         </div>
       </div>
+    </div>
+
+    <div class="container mt-5">
+      <h3 class="mb-3">Registros</h3>
+      <TableRegisters :registros="registros" />
     </div>
   </section>
 </template>
