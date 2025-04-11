@@ -6,11 +6,11 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
 </script>
 
 <template>
-  <section id="form-section" class="form-section py-4 py-md-5">
+  <section id="form-section" class="form-section py-4 py-md-5" aria-label="Sección de formulario">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8 text-center mb-4">
-          <h2 class="display-5 fw-bold text-secondary fs-4 fs-md-3 fs-lg-1">
+          <h2 class="display-5 fw-bold text-secondary fs-4 fs-md-3 fs-lg-1" aria-label="Título de la sección de formulario">
             Solicita formación gratuita
           </h2>
         </div>
@@ -18,7 +18,7 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
 
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
-          <form @submit="handleSubmit" class="needs-validation" novalidate>
+          <form @submit="handleSubmit" class="needs-validation" novalidate aria-label="Formulario de solicitud de formación gratuita">
             <div class="row g-3 mb-3">
               <div class="col-12 col-md-6">
                 <input
@@ -29,6 +29,7 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
                   v-model="formState.nombre"
                   placeholder="*Nombre"
                   required
+                  aria-label="Campo de nombre"
                 />
                 <div class="invalid-feedback">{{ errors.nombre }}</div>
               </div>
@@ -42,6 +43,7 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
                   v-model="formState.apellidos"
                   placeholder="*Apellidos"
                   required
+                  aria-label="Campo de apellidos"
                 />
                 <div class="invalid-feedback">{{ errors.apellidos }}</div>
               </div>
@@ -57,6 +59,7 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
                   v-model="formState.email"
                   placeholder="*Email"
                   required
+                  aria-label="Campo de email"
                 />
                 <div class="invalid-feedback">{{ errors.email }}</div>
               </div>
@@ -70,6 +73,7 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
                   v-model="formState.telefono"
                   placeholder="*Teléfono"
                   required
+                  aria-label="Campo de teléfono"
                 />
                 <div class="invalid-feedback">{{ errors.telefono }}</div>
               </div>
@@ -80,6 +84,7 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
                 type="submit"
                 class="btn btn-secondary btn-lg px-4 fs-8 fs-md-6 fs-lg-4 py-2"
                 :disabled="isSubmitting"
+                aria-label="Botón de envío del formulario"
               >
                 {{ isSubmitting ? 'Enviando...' : 'Solicita' }}
               </button>

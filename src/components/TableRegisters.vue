@@ -9,27 +9,27 @@ defineProps<Props>()
 </script>
 
 <template>
-  <div class="table-responsive">
-    <table class="table table-hover align-middle">
-      <thead class="table-light">
-        <tr>
-          <th scope="col" class="text-nowrap px-3">#</th>
-          <th scope="col" class="text-nowrap px-3">Nombre</th>
-          <th scope="col" class="text-nowrap px-3">Apellidos</th>
-          <th scope="col" class="text-nowrap px-3">Email</th>
-          <th scope="col" class="text-nowrap px-3">Teléfono</th>
+  <div class="table-responsive" aria-label="Tabla de registros">
+    <table class="table table-hover align-middle" aria-label="Tabla de registros">
+      <thead class="table-light" aria-label="Encabezado de la tabla">
+        <tr aria-label="Fila de encabezado">
+          <th scope="col" class="text-nowrap px-3" aria-label="Columna de número">#</th>
+          <th scope="col" class="text-nowrap px-3" aria-label="Columna de nombre">Nombre</th>
+          <th scope="col" class="text-nowrap px-3" aria-label="Columna de apellidos">Apellidos</th>
+          <th scope="col" class="text-nowrap px-3" aria-label="Columna de email">Email</th>
+          <th scope="col" class="text-nowrap px-3" aria-label="Columna de teléfono">Teléfono</th>
         </tr>
       </thead>
       <tbody class="table-group-divider">
         <tr v-if="registros.length === 0">
-          <td colspan="5" class="text-center py-4 text-muted">No hay registros disponibles</td>
+          <td colspan="5" class="text-center py-4 text-muted" aria-label="Mensaje de no registros disponibles">No hay registros disponibles</td>
         </tr>
         <tr v-else v-for="(registro, index) in registros" :key="index">
-          <th scope="row" class="px-3">{{ index + 1 }}</th>
-          <td class="px-3">{{ registro.nombre }}</td>
-          <td class="px-3">{{ registro.apellidos }}</td>
-          <td class="px-3"> {{ registro.email }}</td>
-          <td class="px-3">{{ registro.telefono }}</td>
+          <th scope="row" class="px-3" aria-label="Fila de número">{{ index + 1 }}</th>
+          <td class="px-3" aria-label="Nombre del registro">{{ registro.nombre }}</td>
+          <td class="px-3" aria-label="Apellidos del registro">{{ registro.apellidos }}</td>
+          <td class="px-3" aria-label="Email del registro"> {{ registro.email }}</td>
+          <td class="px-3" aria-label="Teléfono del registro">{{ registro.telefono }}</td>
         </tr>
       </tbody>
     </table>
