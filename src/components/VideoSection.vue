@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="video-section py-4 py-md-5">
+  <section id="video-section"class="video-section py-4 py-md-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center mb-4 mb-lg-5">
@@ -62,10 +62,6 @@
   min-height: 100vh;
 }
 
-.text-secondary {
-  color: var(--secondary-color) !important;
-}
-
 .btn-play:hover {
   opacity: 1;
   transform: scale(1.1);
@@ -80,24 +76,6 @@
   .btn-play {
     width: 60px;
     height: 60px;
-  }
-
-  h2 {
-    font-size: 2rem !important;
-  }
-
-  p {
-    font-size: 1rem !important;
-  }
-}
-
-@media (min-width: 992px) {
-  h2 {
-    font-size: 2.5rem !important;
-  }
-
-  p {
-    font-size: 1.2rem !important;
   }
 }
 </style>

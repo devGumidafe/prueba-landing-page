@@ -27,13 +27,13 @@
         <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white custom-nav-link" href="#">Qué es</a>
+              <a class="nav-link text-white custom-nav-link" href="#video-section">Qué es</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white custom-nav-link" href="#">Qué vas a aprender</a>
+              <a class="nav-link text-white custom-nav-link" href="#learn-section">Qué vas a aprender</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white custom-nav-link" href="#">Solicita formación</a>
+              <a class="nav-link text-white custom-nav-link" href="#form-section">Solicita formación</a>
             </li>
           </ul>
         </nav>
