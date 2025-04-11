@@ -3,6 +3,7 @@ import Header from '@/components/Header.vue'
 import VideoSection from '@/components/VideoSection.vue'
 import LearnSection from '@/components/LearnSection.vue'
 import Footer from '@/components/Footer.vue'
+import FormSection from '@/components/FormSection.vue'
 
 </script>
 
@@ -11,6 +12,7 @@ import Footer from '@/components/Footer.vue'
     <Header />
     <VideoSection />
     <LearnSection />
+    <FormSection />
     <Footer />
   </div>
 </template>
