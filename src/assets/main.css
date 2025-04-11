@@ -1,42 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --primary-color: #000;
-    --secondary-color: #FF302A;
-    --font-family: 'Poppins', sans-serif;
+  --primary-color: #000;
+  --secondary-color: #ff302a;
+  --font-family: 'Poppins', sans-serif;
 
-    --bs-font-sans-serif: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    --bs-body-font-family: var(--font-family);
-    --bs-body-font-weight: 400;
-    --bs-btn-font-family: var(--font-family);
-    --bs-btn-font-weight: 500;
+  --bs-font-sans-serif:
+    'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    sans-serif;
+  --bs-body-font-family: var(--font-family);
+  --bs-body-font-weight: 400;
+  --bs-btn-font-family: var(--font-family);
+  --bs-btn-font-weight: 500;
 }
 
 body {
-    font-family: var(--font-family) !important;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: var(--font-family) !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .btn {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6,
-.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
-    font-family: var(--font-family) !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: var(--font-family) !important;
 }
 
-.navbar, .nav-link, .dropdown-menu, .form-control, .input-group {
-    font-family: var(--font-family) !important;
+.navbar,
+.nav-link,
+.dropdown-menu,
+.form-control,
+.input-group {
+  font-family: var(--font-family) !important;
 }
 
-input, select, textarea, button {
-    font-family: var(--font-family) !important;
+input,
+select,
+textarea,
+button {
+  font-family: var(--font-family) !important;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.btn-secondary:hover {
+  background-color: #e62b25 !important;
+  border-color: #e62b25 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hyphens-auto {
+  text-align: justify;
+  text-rendering: optimizeLegibility;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
 }

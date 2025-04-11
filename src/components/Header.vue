@@ -122,13 +122,4 @@
     margin-left: 1.25rem;
   }
 }
-
-.hyphens-auto {
-  text-align: justify;
-  text-rendering: optimizeLegibility;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-}
 </style>
