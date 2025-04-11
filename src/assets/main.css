@@ -1,3 +1,42 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-@import 'bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+:root {
+    --primary-color: #000;
+    --secondary-color: #FF302A;
+    --font-family: 'Poppins', sans-serif;
+
+    --bs-font-sans-serif: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    --bs-body-font-family: var(--font-family);
+    --bs-body-font-weight: 400;
+    --bs-btn-font-family: var(--font-family);
+    --bs-btn-font-weight: 500;
+}
+
+body {
+    font-family: var(--font-family) !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.btn {
+    font-family: var(--font-family);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+    font-family: var(--font-family) !important;
+}
+
+.navbar, .nav-link, .dropdown-menu, .form-control, .input-group {
+    font-family: var(--font-family) !important;
+}
+
+input, select, textarea, button {
+    font-family: var(--font-family) !important;
+}

@@ -1,10 +1,11 @@
 <script setup lang="ts">
-
+import Header from './components/Header.vue';
 </script>
 
 <template>
-    <h1>Hello world</h1>
-  
+  <div class="d-flex flex-column bg-white vh-100">
+    <Header />
+  </div>
 </template>
 
 <style scoped>
