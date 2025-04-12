@@ -22,7 +22,7 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
           <form
-            @submit="handleSubmit"
+            @submit.prevent="handleSubmit"
             class="needs-validation"
             novalidate
             aria-label="Formulario de solicitud de formación gratuita"
@@ -110,6 +110,10 @@ const { formState, errors, handleSubmit, isSubmitting, registros } = useFormRegi
 </template>
 
 <style scoped>
+.form-section {
+  min-height: 100vh;
+}
+
 .btn-secondary:disabled {
   opacity: 0.7;
   cursor: not-allowed;

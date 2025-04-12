@@ -68,9 +68,7 @@ export const useFormRegister = () => {
     return isValid
   }
 
-  const handleSubmit = async (e: Event) => {
-    e.preventDefault()
-
+  const handleSubmit = () => {
     if (isSubmitting.value) return
 
     isSubmitting.value = true

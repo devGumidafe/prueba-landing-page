@@ -19,7 +19,7 @@ import LearnCard from './LearnCard.vue'
             ¿Qué vas a aprender?
           </h2>
           <p
-            class="lead text-dark text-center mb-4 hyphens-auto fs-6 fs-md-5 fs-lg-4"
+            class="lead col-12 col-md-8 mx-auto text-dark text-center mb-4 hyphens-auto fs-6 fs-md-5 fs-lg-4"
             aria-label="Descripción de la sección de aprendizaje"
           >
             En (des)CONECTA - Conéctate contra la tecnoadicción, organizamos
@@ -56,14 +56,18 @@ import LearnCard from './LearnCard.vue'
 </template>
 
 <style scoped>
+.learn-section {
+  min-height: 100vh;
+  margin-top: -100px;
+}
+
 .main-card {
   background-color: #f2f2f2 !important;
 }
 
-.learn-section {
-  position: relative;
-  margin-top: -150px;
-  z-index: 10;
+@media screen and (width >= 768px) {
+  .learn-section {
+    margin-top: -60px;
+  }
 }
-
 </style>

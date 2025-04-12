@@ -4,7 +4,7 @@
   <section id="video-section" class="video-section py-4 py-md-5" aria-label="Sección de video">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto text-center mb-4 mb-lg-5">
+        <div class="col-12 col-lg-8 mx-auto text-center mb-4 mb-lg-5">
           <h2
             class="display-2 fw-bold text-secondary mb-4 fs-1 fs-md-2 fs-lg-1"
             aria-label="Título de la sección de video"
@@ -80,6 +80,7 @@
 }
 
 .btn-play:hover {
+  cursor: pointer;
   opacity: 1;
   transform: scale(1.1);
   transition: transform 0.3s ease;
@@ -93,14 +94,12 @@
 @media screen and (width >= 768px) {
   .video-section {
     background-size: 100% 50%;
-    min-height: 90vh;
   }
 }
 
 @media screen and (width >= 992px) {
   .video-section {
     background-size: 100% 40%;
-    min-height: 120vh;
   }
 }
 </style>

@@ -4,7 +4,6 @@ import VideoSection from '@/components/VideoSection.vue'
 import LearnSection from '@/components/LearnSection.vue'
 import Footer from '@/components/Footer.vue'
 import FormSection from '@/components/FormSection.vue'
-
 </script>
 
 <template>
@@ -17,5 +16,4 @@ import FormSection from '@/components/FormSection.vue'
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
